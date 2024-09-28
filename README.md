@@ -1,2 +1,2 @@
 # C
-All in C and C++
+All in C
