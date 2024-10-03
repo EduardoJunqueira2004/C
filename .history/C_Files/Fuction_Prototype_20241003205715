@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main()
+{
+    /*
+            Fuction Prototype
+            //What is it?
+    */
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+//Fuct
+void hello(char name[], int age)
+{
+    printf("Hello, my name is %s and I am %d years old.\n",name,age);
+}
+int main()
+{
+    /*
+            Fuction Prototype without a body
+                                --> Ensures that calls to a fuction made with the correct arguments
+    */
+
+    return 0;
+}

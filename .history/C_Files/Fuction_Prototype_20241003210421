@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+
+int main()
+{
+    /*
+            Fuction Prototype without a body
+                                --> Ensures that calls to a fuction made with the correct arguments
+    */
+
+    return 0;
+}
