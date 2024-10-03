@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main()
+{
+    int age;
+    char name[];//bytes
+     printf("Hello World\n");
+    printf("What's your name?\n");
+     //scanf("%s", name);
+     fgets(name,25,stdin);//We can read any character spaces!
+     printf("How are you %s\n",name);
+    printf("How old are you? \n");
+    scanf("%d",&age);
+     printf("You are %s and you have %d years old!\n",name,age);
+    return 0;
+
+}
