@@ -1,2 +1,0 @@
-# C
-All in C
