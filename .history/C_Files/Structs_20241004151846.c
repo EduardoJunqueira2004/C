@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+
+int main()
+{
+    /*
+            *Structs = collections of related members ("variables")
+            *they can be of different types of data
+    */
+    return 0;
+}

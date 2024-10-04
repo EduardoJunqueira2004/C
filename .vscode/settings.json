@@ -56,5 +56,8 @@
   "C_Cpp_Runner.showCompilationTime": false,
   "C_Cpp_Runner.useLinkTimeOptimization": false,
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
-  "cSpell.language": "en,en-US"
+  "cSpell.language": "en,en-US",
+  "cSpell.ignoreWords": [
+    "Camaro"
+  ]
 }
