@@ -1,5 +1,70 @@
 #include<stdio.h>
+#include<string.h>
 
+//Function to check and swap the array of the numbers
+void sort(int array [], int size)
+{
+    //for loops
+    for(int i = 0; i <size -1; i++)
+    {
+        for(int j = 0; j < size -1; j++)
+        {
+            //check the element on the left is greater than the element on the right
+            if(array[j] < array[j+1]) //crescent  order
+            //if(array[j] < array[j+1])--> descending order
+            {
+                //swap the elements
+                int temp = array[j];
+                array[j] = array[j+1];
+                array[j+1] = temp;
+
+            }
+        }
+    }
+
+}
+
+//Function to check and swap the array of the characters 
+void sort1(char array1 [], int size1)
+{
+    //for loops
+    for(int i = 0; i <size1 -1; i++)
+    {
+        for(int j = 0; j < size1 -1; j++)
+        {
+            //check the element on the left is greater than the element on the right
+            if(array1[j] > array1[j+1]) //crescent  order
+            //if(array[j] < array[j+1])--> descending order
+            {
+                //swap the elements
+                int temp = array1[j];
+                array1[j] = array1[j+1];
+                array1[j+1] = temp;
+
+            }
+        }
+    }
+
+}
+//Fuction to print the array of the numbers
+void printArray(int array [], int size)
+{
+    for(int i = 0; i < size; i++)
+    {
+        printf("%d ", array[i]);
+    }
+
+}
+
+//Fuction to print the array of the characters 
+void printArray1(char array1 [], int size1)
+{
+    for(int i = 0; i < size1; i++)
+    {
+        printf("%c ", array1[i]);
+    }
+
+}
 int main()
 {
     /*
@@ -26,7 +91,7 @@ int main()
     for(int i = 0; i < sizeof(prices2) / sizeof(prices2[0]); i++) {
         printf("\n$%.2lf", prices2[i]);
     }
-
+//___________________________________________________________________________________________
     // 2D array with 3 rows and 3 columns
     int matrix[3][3];
     
@@ -57,5 +122,32 @@ int main()
         printf("\n");  // New line after each row of the matrix
     }
 
+        //Array 2 D of strings :
+        char cars[25][25]={"Mustang","Corvette","Camaro","BMW","TOYOTA","Mercedes","FIAT"};
+        printf("\n");   
+        //cars[0]="Tesla";
+        //String copy fuction needs  #include<string.h>
+        strcpy(cars[0], "Tesla");
+
+        for(int i = 0; i< sizeof(cars)/sizeof(cars[0]);i++)
+        {  
+            printf("%s\n",cars[i]);
+
+        }
+//___________________________________________________________________________________________
+        printf("\n");
+            //New exercise with 2 fuctions void one to sort the array and the other to print the array
+            //Array of characters and array of numbers here
+        int array[]= {1,2,3,4,5,6,7,8,9,10};
+        char array1[]= {'F','A','D','B','C'};
+
+        int size = sizeof(array)/sizeof(array[0]);
+        int size1 = sizeof(array1)/sizeof(array1[0]);
+
+        sort(array,size);
+        printArray(array,size);
+        sort1(array1,size1);
+        printArray1(array1,size1);
+        
     return 0;
 }

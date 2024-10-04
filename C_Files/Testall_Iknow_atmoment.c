@@ -76,7 +76,7 @@ void describe_course()
     fgets(uni_name, sizeof(uni_name), stdin);
     uni_name[strcspn(uni_name, "\n")] = 0;  // Clean the new line
 
-    printf("Enter the abbreviation of  your (\"sigla\") of your university: ");
+    printf("Enter the abbreviation of  your (\"#\") of your university: ");
     fgets(uni_si, sizeof(uni_si), stdin);
     uni_si[strcspn(uni_si, "\n")] = 0;  // Clean the new line
 
